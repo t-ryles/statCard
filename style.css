@@ -1,0 +1,66 @@
+:root {
+	--Background-color: hsl(233, 47%, 7%);
+	--Card-background-color: hsl(244, 38%, 16%);
+	--Accent-color: hsl(277, 64%, 61%);
+	--White-main: hsl(0, 0%, 100%);
+	--Main-paragraph-white: hsla(0, 0%, 100%, 0.75);
+	--Stat-heading-white: hsla(0, 0%, 100%, 0.6);
+}
+
+h1 {
+	padding: 6% 55px 0 55px;
+	font-family: 'Lexend Deca', sans-serif;
+	font-weight: 700;
+	font-size: 25px;
+}
+
+h3 {
+	font-family: 'Lexend Deca', sans-serif;
+}
+
+h3 > .statTitle {
+	font-family: 'Inter', sans-serif;
+}
+
+p {
+	padding: 0 40px;
+	font-family: 'Inter', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 175%;
+}
+
+body {
+	background-color: var(--Background-color);
+	color: var(--Main-paragraph-white);
+	width: 375px;
+	margin: auto;
+	padding-top: 7%;
+}
+
+img {
+	border-radius: 10px 10px 0 0;
+	color: var(--Accent-color);
+}
+
+.card {
+	width: 350px;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	text-align: center;
+	border-radius: 10px;
+	background-color: var(--Card-background-color);
+}
+
+.subclass {
+	font-family: 'Inter', sans-serif;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
