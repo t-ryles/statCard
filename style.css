@@ -12,6 +12,7 @@ h1 {
 	font-family: 'Lexend Deca', sans-serif;
 	font-weight: 700;
 	font-size: 25px;
+	margin: 0 0 10px 0;
 }
 
 #insight {
@@ -19,19 +20,19 @@ h1 {
 }
 
 h3 {
-	font-family: 'Lexend Deca', sans-serif;
-}
-
-h3 > .statTitle {
 	font-family: 'Inter', sans-serif;
+	margin-bottom: 3px;
+	font-size: 20px;
 }
 
 p {
-	padding: 0 40px;
+	padding: 0 70px;
 	font-family: 'Inter', sans-serif;
-	font-size: 15px;
+	font-size: 12px;
 	font-weight: 400;
 	line-height: 175%;
+	padding-bottom: 0;
+	margin: 0;
 }
 
 body {
@@ -42,9 +43,22 @@ body {
 	padding-top: 7%;
 }
 
+.rightContainer {
+	position: relative;
+}
+
 img {
+	width: 350px;
 	border-radius: 10px 10px 0 0;
-	color: var(--Accent-color);
+}
+
+.overlay {
+	position: absolute;
+	width: 350px;
+	height: 256.88px;
+	border-radius: 10px 10px 0 0;
+	background-color: hsla(277, 98%, 36%, 0.486);
+	z-index: 1;
 }
 
 .card {
@@ -55,16 +69,98 @@ img {
 	text-align: center;
 	border-radius: 10px;
 	background-color: var(--Card-background-color);
+	padding-bottom: 5px;
 }
 
-.subclass {
-	font-family: 'Inter', sans-serif;
+.statContainer {
+	margin: 0;
+	padding: 0 0 20px 0;
 }
 
+.statTitle {
+	font-family: 'Lexend Deca', sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 8px;
+	letter-spacing: 3px;
+}
 .attribution {
 	font-size: 11px;
 	text-align: center;
 }
 .attribution a {
 	color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1440px) {
+	body {
+		background-color: var(--Background-color);
+		color: var(--Main-paragraph-white);
+		width: 1000px;
+		height: auto;
+		margin: auto;
+		padding-top: 7%;
+	}
+
+	.card {
+		width: 100%;
+		height: 300px;
+		margin: auto;
+		border-radius: 10px;
+		background-color: var(--Card-background-color);
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.rightContainer {
+		height: auto;
+	}
+
+	img {
+		width: 100%;
+		height: 305px;
+		border-radius: 0 10px 10px 0;
+	}
+
+	.rightContainer {
+		position: relative;
+		display: flex;
+		left: 100%;
+	}
+
+	.leftContainer {
+		height: auto;
+		position: relative;
+		right: 100%;
+		padding: 10%;
+	}
+
+	h1 {
+		font-family: 'Lexend Deca', sans-serif;
+		padding: 0;
+		position: relative;
+	}
+
+	p {
+		padding: 0;
+	}
+
+	.statContainer {
+		display: flex;
+		margin: 0;
+		padding: 0 0 20px 0;
+	}
+
+	.statTitle {
+		height: auto;
+		width: auto;
+	}
+
+	.statContainer h3 {
+		display: block;
+	}
+
+	.overlay {
+		display: none;
+	}
 }
